@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+    
+    <head>
+        <title>PlantillaTh</title>
+        <meta charset="UTF-8"/>
+    </head>
+    
+    <body>  
+        
+        <header th:fragment="encabezado">
+          
+            <h1 th:text="#{pagina.titulo}">Control Consumidor</h1>
+            
+        </header>
+        
+        <footer th:fragment="piepagina">
+            <div>
+                <br/>
+                <a th:href="@{/(lang=es)}">ES</a>-
+                <a th:href="@{/(lang=en)}">IN</a>-
+                <a th:href="@{/(lang=nl)}">NL</a>-
+                <span>[[#{pagina.pie-de-pagina}]] <a href="https://github.com/EverF47" target="_blank">EverFelipe47.git</a></span>
+            </div>
+            
+                
+        </footer>
+        
+    </body>
+    
+</html>
